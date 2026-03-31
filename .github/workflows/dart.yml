@@ -26,23 +26,26 @@ jobs:
           channel: 'stable'
           cache: true
 
+      - name: 🩺 Flutter Doctor (Diagnostics)
+        run: flutter doctor -v
+
       - name: 📦 Install Dependencies
         run: flutter pub get
 
-      - name: 🛠️ Run Code Generation
-        run: dart run build_runner build --delete-conflicting-outputs
+      - name: 🛠️ Run Code Generation (Verbose)
+        run: dart run build_runner build --delete-conflicting-outputs -v
 
       - name: 🔎 Analyze Source Code
         run: flutter analyze
 
       - name: 🏗️ Build DEV APK
-        run: flutter build apk -t lib/main_dev.dart --release
+        run: flutter build apk -t lib/main_dev.dart --release -v
         
       - name: 🏗️ Build UAT APK
-        run: flutter build apk -t lib/main_uat.dart --release
+        run: flutter build apk -t lib/main_uat.dart --release -v
 
       - name: 🏗️ Build PROD APK
-        run: flutter build apk -t lib/main_prod.dart --release
+        run: flutter build apk -t lib/main_prod.dart --release -v
 
       - name: 📤 Upload Android Artifacts
         uses: actions/upload-artifact@v4
@@ -64,20 +67,23 @@ jobs:
           channel: 'stable'
           cache: true
 
+      - name: 🩺 Flutter Doctor (Diagnostics)
+        run: flutter doctor -v
+
       - name: 📦 Install Dependencies
         run: flutter pub get
 
-      - name: 🛠️ Run Code Generation
-        run: dart run build_runner build --delete-conflicting-outputs
+      - name: 🛠️ Run Code Generation (Verbose)
+        run: dart run build_runner build --delete-conflicting-outputs -v
 
       - name: 🏗️ Build DEV iOS (No Codesign)
-        run: flutter build ios -t lib/main_dev.dart --release --no-codesign
+        run: flutter build ios -t lib/main_dev.dart --release --no-codesign -v
 
       - name: 🏗️ Build UAT iOS (No Codesign)
-        run: flutter build ios -t lib/main_uat.dart --release --no-codesign
+        run: flutter build ios -t lib/main_uat.dart --release --no-codesign -v
 
       - name: 🏗️ Build PROD iOS (No Codesign)
-        run: flutter build ios -t lib/main_prod.dart --release --no-codesign
+        run: flutter build ios -t lib/main_prod.dart --release --no-codesign -v
 
       - name: 📤 Upload iOS Artifacts
         uses: actions/upload-artifact@v4
