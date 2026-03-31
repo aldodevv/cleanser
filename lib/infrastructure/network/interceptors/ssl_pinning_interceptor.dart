@@ -8,9 +8,4 @@ class SslPinningInterceptor extends Interceptor {
   // Instead, you'd configure dio.httpClientAdapter (IOHttpClientAdapter)
   // to validate the badCertificateCallback or use fingerprinting.
   // This interceptor acts as a place-holder for any manual validation.
-  
-  @override
-  void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
-    super.onRequest(options, handler);
-  }
 }

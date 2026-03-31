@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:injectable/injectable.dart';
 
 import 'interceptors/encryption_interceptor.dart';
@@ -36,7 +37,7 @@ abstract class DioProvider {
       LogInterceptor(
         requestBody: true,
         responseBody: true,
-        logPrint: (obj) => print(obj.toString()),
+        logPrint: (obj) => debugPrint(obj.toString()),
       ),
     ]);
 
