@@ -1,0 +1,22 @@
+{
+  "general": {
+    "welcome": "Welcome to Cleanser",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "success": "Success",
+    "error": "An error occurred"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "forgotPassword": "Forgot Password?",
+    "terms": "Terms & Conditions"
+  },
+  "home": {
+    "title": "Home",
+    "services": "Our Services",
+    "plan": "Subscribe",
+    "profile": "Profile"
+  }
+}

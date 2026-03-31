@@ -1,0 +1,9 @@
+targets:
+  $default:
+    sources:
+      - "lib/infrastructure/l10n/translations/**"
+    base_locale: id
+    fallback_strategy: base_locale
+    output_directory: "lib/infrastructure/l10n"
+    output_file_name: "strings.g.dart"
+    translation_class_visibility: public

@@ -1,0 +1,22 @@
+{
+  "general": {
+    "welcome": "Selamat Datang di Cleanser",
+    "submit": "Kirim",
+    "cancel": "Batal",
+    "loading": "Memuat...",
+    "success": "Berhasil",
+    "error": "Terjadi kesalahan"
+  },
+  "auth": {
+    "signIn": "Masuk",
+    "signUp": "Daftar",
+    "forgotPassword": "Lupa Sandi?",
+    "terms": "Syarat & Ketentuan"
+  },
+  "home": {
+    "title": "Beranda",
+    "services": "Layanan Kami",
+    "plan": "Langganan",
+    "profile": "Profil"
+  }
+}
