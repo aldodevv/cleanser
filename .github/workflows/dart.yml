@@ -32,6 +32,9 @@ jobs:
       - name: 📦 Install Dependencies
         run: flutter pub get
 
+      - name: 🌐 Run Slang (Localization)
+        run: dart run slang
+
       - name: 🛠️ Run Code Generation (Verbose)
         run: dart run build_runner build --delete-conflicting-outputs -v
 
@@ -72,6 +75,9 @@ jobs:
 
       - name: 📦 Install Dependencies
         run: flutter pub get
+
+      - name: 🌐 Run Slang (Localization)
+        run: dart run slang
 
       - name: 🛠️ Run Code Generation (Verbose)
         run: dart run build_runner build --delete-conflicting-outputs -v
