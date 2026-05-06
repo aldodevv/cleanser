@@ -1,5 +1,6 @@
 import 'package:cleanser/infrastructure/l10n/translations/strings.g.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'infrastructure/routing/app_router.dart';
 import 'infrastructure/theme/app_theme.dart';
@@ -90,6 +91,7 @@ class _MainAppState extends State<MainApp> with WidgetsBindingObserver {
       routerConfig: appRouter.config(),
       locale: TranslationProvider.of(context).flutterLocale,
       supportedLocales: AppLocaleUtils.supportedLocales,
+      localizationsDelegates: GlobalMaterialLocalizations.delegates,
     );
   }
 }
