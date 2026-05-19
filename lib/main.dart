@@ -20,7 +20,7 @@ void main() async {
   configureDependencies(F.appFlavor.name);
 
   // Load environment variables
-  await dotenv.load(fileName: ".env.${F.appFlavor.name}");
+  await dotenv.load(fileName: ".env");
 
   // Initialize Slang Localization
   LocaleSettings.useDeviceLocale();

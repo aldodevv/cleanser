@@ -9,7 +9,7 @@ class AppRouter extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
     // Splash Routes
-    AutoRoute(page: SplashRoute.page, initial: true),
+    AutoRoute(page: ServicesRoute.page, initial: true),
     AutoRoute(page: OnboardRoute.page),
 
     // Auth Routes
@@ -25,8 +25,11 @@ class AppRouter extends RootStackRouter {
 
     // Main Routes
     AutoRoute(page: HomeRoute.page),
-    AutoRoute(page: ServicesRoute.page),
+    // AutoRoute(page: ServicesRoute.page),
     AutoRoute(page: SubscribePlanRoute.page),
     AutoRoute(page: ProfileRoute.page),
+
+    // General Routes
+    AutoRoute(page: CallRoute.page),
   ];
 }

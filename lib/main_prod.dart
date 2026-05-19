@@ -11,7 +11,7 @@ void main() async {
   configureDependencies('prod');
 
   // Load environment variables
-  await dotenv.load(fileName: ".env.prod");
+  await dotenv.load(fileName: ".env");
 
   LocaleSettings.useDeviceLocale();
 

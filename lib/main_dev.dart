@@ -12,7 +12,7 @@ void main() async {
   configureDependencies('dev');
 
   // Load environment variables
-  await dotenv.load(fileName: ".env.dev");
+  await dotenv.load(fileName: ".env");
 
   // Initialize Slang Localization
   LocaleSettings.useDeviceLocale();

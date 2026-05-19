@@ -12,7 +12,7 @@ void main() async {
   configureDependencies('uat');
 
   // Load environment variables
-  await dotenv.load(fileName: ".env.uat");
+  await dotenv.load(fileName: ".env");
 
   // Initialize Slang Localization
   LocaleSettings.useDeviceLocale();

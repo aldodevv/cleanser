@@ -67,6 +67,9 @@ dependencies:
   icons_launcher: ^3.1.0
 
   flutter_dotenv: ^5.1.0
+  audioplayers: ^6.6.0
+  flutter_ringtone_player: ^4.0.0+4
+  wakelock_plus: ^1.5.2
 
 dev_dependencies:
   flutter_test:
@@ -130,6 +133,4 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
-    - .env.dev
-    - .env.uat
-    - .env.prod
+    - .env
